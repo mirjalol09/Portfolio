@@ -1,0 +1,170 @@
+header {
+    margin: 0 auto;
+    display: flex;
+    background-color: #111111;
+    background-image: url(../images/homepage/desktop/hero-bg-desktop@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: 1560px;
+    .header__content {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        padding: 65px 10px 198px 10px;
+
+        .header__about {
+            max-width: 500px;
+
+            .header-logo {
+                margin-bottom: 153px;
+            }
+
+            h1 {
+                color: #FFF;
+                font-family: League Spartan;
+                font-size: 80px;
+                font-weight: 300;
+                line-height: 80px;
+                letter-spacing: -1px;
+            }
+
+            .descr {
+                margin-top: 10px;
+                color: #FFF;
+                font-family: League Spartan;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+            }
+            .btn{
+                margin-top: 40px;
+            }
+        }
+        .timer{
+            width: 100%;
+            max-width: 552px;
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            gap: 15px;
+            div{
+              width: 120px;
+              height: 120px;
+              border: 1px solid #FFF;
+              background: #FFF;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              p{
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 48px;
+                letter-spacing: 2.5px;
+              }
+              span{
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 13px;
+              }
+            }
+          }
+    }
+}
+
+@media only screen and (min-width:650px) and (max-width: 1110px) {
+    header {
+        background-position:  center top ;
+        background-color: black;
+        background-size: contain;
+        background-image: url(../images/homepage/tablet/hero-bg-tablet@2x.jpg);
+        .header__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .header__about {
+
+                padding-top: 460px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 689px;
+
+                .header-logo {
+                    margin-bottom: 38px;
+                }
+
+                h1 {
+                    width: 300px;
+                    color: #FFF;
+                    text-align: center;
+                    text-align: center;
+                    font-size: 48px;
+                    line-height: 64px;
+                    letter-spacing: -0.6px;
+                }
+
+                .descr {
+                    width: 570px;
+                    text-align: center;
+                    margin-bottom: 52px;
+                }
+
+            }
+            .timer {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 650px),
+(max-width:375px) {
+    header {
+        background-color: black;
+        background-position: center top;
+        background-size: contain;
+        background-image: url(../images/homepage/mobile/hero-bg-mobile@2x.jpg);
+        overflow: visible;
+        
+        padding-top: 280px;
+        .header__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .header__about {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .header-logo {
+                    margin-bottom: 38px;
+                }
+
+                h1 {
+                    text-align: center;
+                    line-height: 40px;
+                    letter-spacing: -0.4px;
+                    font-size: 32px;
+                }
+
+                .descr {
+                    text-align: center;
+                    font-family: League Spartan;
+                    font-size: 16px;
+                    line-height: 26px;
+                    margin-bottom: 53px;
+                }
+
+            }
+
+            .timer {
+                display: none;
+            }
+        }
+    }
+}
